@@ -1,0 +1,123 @@
+/* Navbar container styles */
+.navbar-container {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+ 
+
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative; /* Fixed position to keep the navbar fixed on the screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Logo styles */
+.navbar-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+  rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
+}
+
+.navbar-logo-image {
+  width: 60px;
+  height: 60px;
+}
+
+/* Links styles */
+.navbar-link {
+  text-decoration: none;
+  color: rgb(172, 171, 171);
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-link:hover {
+  transition: background-color 0.5s ease-in-out;
+  color: black;
+  background-color: #e8308c;
+}
+
+/* Active link styles */
+.navbar-link.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Button styles */
+.navbar-button {
+  padding: 10px 16px;
+  border-radius: 4px;
+  background-color: #e8308c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+    rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-button:hover {
+  transition: background-color 0.5s ease-in-out;
+  color: black;
+  background-color: #fad1e6; /* Darker shade of teal on hover */
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-around;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    /* Center the hamburger icon */
+    .navbar-hamburger {
+      display: block;
+      cursor: pointer;
+      margin:  4px  auto;
+    }
+  
+    /* Hide regular links on small screens */
+    .navbar-link {
+      visibility: hidden;
+    }
+  
+    /* Show the navigation links when the hamburger menu is active */
+    .navbar-hamburger.active ~ .navbar-links .navbar-link {
+      visibility: visible;
+      display: block;
+    }
+  
+    /* Hamburger icon styles (unchanged) */
+    .navbar-hamburger .line {
+      width: 25px;
+      height: 3px;
+      background-color: rgba(232, 48, 140);
+      margin: 4px;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .navbar-hamburger.active .line:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .navbar-hamburger.active .line:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-hamburger.active .line:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
