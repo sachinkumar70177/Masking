@@ -1,15 +1,54 @@
+.star{
+  width: 30%;
+  margin: auto;
+
+}
+.star span{
+  color: gold;
+  box-shadow: #ffeb79 0px 5px 15px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: rgb(254, 244, 185);
+}
+.heart {
+color: rgb(176, 23, 140);
+/* box-shadow: rgba(176, 23, 140, 0.35) 0px 5px 15px; */
+border-radius: 50%;
+padding: 2px;
+
+}
+.rotateHeart {
+  animation: rotate 2s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.world{
+  color: rgb(176, 23, 140);
+}
 /* ImageOverBox CSS */
 .container {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+ left: 23%;
+  
 }
 
 .box {
   width: 100%;
   height: 100%;
-  background-color: #008080;
-  overflow: visible; /* Image can overflow outside the box */
+ border-radius: 5% 50%;
+ border: 4px rgb(201, 193, 193) solid;
+ background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+  overflow:visible ; /* Image can overflow outside the box */
 }
 
 .image {
@@ -17,8 +56,108 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   z-index: 1;
+  border-radius: 50%;
+  border: 4px rgb(201, 193, 193) solid;
 }
+/*  */
+.container1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+ left: 65%;
+  
+}
+/* https://i.pinimg.com/236x/b7/88/c8/b788c83af16e0f5c08454d22e7d98620.jpg */
+
+.box1 {
+  width: 100%;
+  height: 100%;
+ border-radius: 5% 50%;
+ border: 4px rgb(201, 193, 193) solid;
+ background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+  overflow:visible ; /* Image can overflow outside the box */
+}
+
+.image1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 50%;
+  border: 4px rgb(201, 193, 193) solid;
+}
+.Button{
+  align-content: center;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: auto;
+  width: 90px;
+  height: 40px;
+  background-color: #e8308c;
+  color: white;
+  border: 2px whitesmoke solid;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+    rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+.Button:hover {
+  transition: background-color 0.5s ease-in-out;
+  color: black;
+  background-color: #fad1e6; /* Darker shade of teal on hover */
+}
+/* ScrollableInput.css */
+.scrollableinputcontainer {
+  height: 100px; /* Set your desired height here */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto; /* Enable scrolling */
+}
+
+.scrollableinput {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  resize: none; /* Disable textarea resizing */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  
+}
+
+@media (max-width:1100px) {
+.container{
+  left: 15%;
+}
+.container1{
+  left: 70%;
+}
+}
+
+@media (max-width:768px) {
+  .container{
+    left: 20%;
+  }
+  .container1{
+    left: 75%;
+  }
+  }
+  @media (max-width:400px) {
+    .container{
+      left: 10%;
+    }
+    .container1{
+      left: 45%;
+    }
+    }
