@@ -1,5 +1,13 @@
 .App {
-  
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.pinimg.com/564x/a8/f7/cf/a8f7cf02e5ffaf226068108a42d07f07.jpg");
+  background-repeat: repeat;
+  background-size: cover;
   font-family: 'Adamina', serif;
+  /* height: 100%; */
+}
+.App * {
+  box-sizing: border-box;
 }
 

@@ -1,4 +1,4 @@
-{
+[{
     "users": [
       {
         "id": 1,
@@ -61,4 +61,109 @@
         "email": "cnorssister9@mayoclinic.com"
       }
     ]
-  }
+  },
+  {
+    "NeedMask": [
+      {
+        "icon": "InfoIcon",
+        "title": "Prevent the Spread of Respiratory Infections",
+        "information": "Wearing masks helps reduce the transmission of respiratory droplets, which can contain viruses like COVID-19."
+      },
+      {
+        "icon": "ShieldCheckIcon",
+        "title": "Protect Vulnerable Populations",
+        "information": "Mask-wearing can safeguard vulnerable individuals, such as the elderly and those with underlying health conditions."
+      },
+      {
+        "icon": "CheckCircleIcon",
+        "title": "Minimize the Impact on Healthcare Systems",
+        "information": "By wearing masks, we can decrease the number of infections and alleviate the burden on healthcare facilities."
+      },
+      {
+        "icon": "PeopleIcon",
+        "title": "Promote a Sense of Community and Solidarity",
+        "information": "Wearing masks demonstrates care for others and fosters a collective effort to protect public health."
+      },
+      {
+        "icon": "AtSignIcon",
+        "title": "Reduce Respiratory Allergens and Irritants",
+        "information": "Masks can help people with allergies or respiratory conditions by filtering out allergens and pollutants."
+      },
+      {
+        "icon": "VirusIcon",
+        "title": "Limit the Spread of Airborne Diseases",
+        "information": "Masks can effectively control the transmission of various airborne diseases, including influenza and common cold."
+      },
+      {
+        "icon": "SunIcon",
+        "title": "Prevent Asymptomatic Transmission",
+        "information": "Mask-wearing can reduce the risk of asymptomatic individuals unknowingly spreading infections."
+      },
+      {
+        "icon": "ChatIcon",
+        "title": "Enable Safer Social Interactions",
+        "information": "Masks allow for safer interactions with others, particularly in crowded or indoor settings."
+      },
+      {
+        "icon": "DollarIcon",
+        "title": "Support Economic Recovery",
+        "information": "By controlling the spread of infections, masks play a role in maintaining economic activities and stability."
+      },
+      {
+        "icon": "StarIcon",
+        "title": "Recommended by Health Authorities",
+        "information": "Health organizations worldwide endorse mask-wearing as a preventive measure during pandemics."
+      },
+      {
+        "icon": "TestTubeIcon",
+        "title": "Prevent Overwhelm of Testing Systems",
+        "information": "Mask-wearing helps limit the number of infections, reducing the demand for testing resources."
+      },
+      {
+        "icon": "BiohazardIcon",
+        "title": "Reduce the Risk of Future Pandemics",
+        "information": "Implementing mask-wearing during outbreaks can help prevent the emergence of new pandemics."
+      },
+      {
+        "icon": "GlobeIcon",
+        "title": "Respect for Cultural Norms",
+        "information": "In some cultures, wearing masks is a sign of respect during periods of illness or contagion."
+      },
+      {
+        "icon": "ExternalLinkIcon",
+        "title": "Complement Other Preventive Measures",
+        "information": "Masks are one of several tools used together to control the spread of infectious diseases."
+      },
+      {
+        "icon": "NurseIcon",
+        "title": "Protect Healthcare Workers",
+        "information": "Widespread mask usage reduces the risk of healthcare workers contracting illnesses from patients."
+      },
+      {
+        "icon": "AirplaneIcon",
+        "title": "Ensure Safe Travel",
+        "information": "Mask-wearing in travel settings helps protect travelers and curb the cross-border spread of diseases."
+      },
+      {
+        "icon": "MuseumIcon",
+        "title": "Instill Confidence in Public Spaces",
+        "information": "People feel more at ease visiting public places where mask-wearing is encouraged and practiced."
+      },
+      {
+        "icon": "SchoolIcon",
+        "title": "Maintain Educational Activities",
+        "information": "By preventing outbreaks, schools and educational institutions can remain operational with fewer disruptions."
+      },
+      {
+        "icon": "HappinessIcon",
+        "title": "Curb Fear and Anxiety",
+        "information": "Masks can reduce anxiety about virus transmission, enabling individuals to go about daily activities."
+      },
+      {
+        "icon": "HandsHelpingIcon",
+        "title": "Part of Responsible Citizenship",
+        "information": "Wearing masks is a responsible action that contributes to the well-being of the community."
+      }
+    ]
+  }]
+  
