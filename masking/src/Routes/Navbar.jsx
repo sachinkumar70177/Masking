@@ -53,11 +53,11 @@ function Navbar() {
       {
         true ? (
           <Link as={ChakraLink} to="/login">
-            <Button colorScheme='teal' className={styles["navbar-button"]}>Log In</Button> {/* Use the CSS module class */}
+            <Button colorScheme='teal' className={styles["navbar-button"]}>Log In</Button> 
           </Link>
         ) : (
           <Link as={ChakraLink} to="/">
-            <Button className={styles["navbar-button"]}>hey</Button> {/* Use the CSS module class */}
+            <Button className={styles["navbar-button"]}>hey</Button> 
           </Link>
         )
       }

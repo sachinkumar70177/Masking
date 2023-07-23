@@ -1,0 +1,94 @@
+.arrowleft {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-content: center;
+  padding: 16px 16px;
+
+
+ 
+  background-color: #e8308c;
+  color: white;
+  border: 2px whitesmoke solid;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+    rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
+  transition: background-color 0.2s ease-in-out;
+  }
+  
+
+  
+  .arrowright {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-content: center;
+  padding: 16px 16px;
+
+
+ 
+  background-color: #e8308c;
+  color: white;
+  border: 2px whitesmoke solid;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+    rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
+  transition: background-color 0.2s ease-in-out;
+  }
+  .arrowleft:hover,.arrowright:hover {
+    transition: background-color 0.5s ease-in-out;
+    color: black;
+    background-color: #fad1e6; /* Darker shade of teal on hover */
+  }
+  .arrowleft span{
+    font-size: 20px;
+  }
+  .arrowright span{
+    font-size: 20px;
+  }
+  .arrowdisable{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-content: center;
+  padding: 16px 16px;
+  }
+  .cirlebutton{
+  border-radius: 50%;
+  border: 1px rgb(0, 0, 0) solid;
+  width: 10px;
+  height: 10px;
+  transition: width 0.9s ease-in-out;
+  }
+  .cirlebutton:hover{
+    width: 25px;
+    height: 10px;
+  }
+  .arrbutton{
+    border: none;
+    color: transparent;
+  }
+  .isactive{
+    border-radius: 30%;
+    border: none;
+    color: black;
+ 
+    
+  }
+
+ 
+  .arr{
+    position: relative;
+    left:20%
+  }
+  .buttonarrow{
+    position: relative;
+    left:5%
+  }

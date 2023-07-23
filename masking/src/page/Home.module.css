@@ -164,6 +164,9 @@ padding: 2px;
 .container{
   left: 15%;
 }
+/* .image{
+  left:auto;
+} */
 .container1{
   left: 70%;
 }
@@ -176,12 +179,14 @@ padding: 2px;
   .container1{
     left: 75%;
   }
+ 
   }
-  @media (max-width:400px) {
+  @media (max-width:500px) {
     .container{
-      left: 10%;
+      left: 5%;
     }
     .container1{
-      left: 45%;
+      left: 40%;
     }
+  
     }
