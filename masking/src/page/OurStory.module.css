@@ -1,0 +1,187 @@
+/* OurStory.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .imageTextContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .text {
+    flex: 1;
+    align-self: center;
+    margin-left: 20px;
+  }
+  
+  .image {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* Styling for listing items */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: teal;
+  }
+  
+  .breadcrumblink {
+    color: teal;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+  
+  
+  .activeLink {
+    color: red;
+  }
+  
+  .breadcrumbseparator {
+    margin: 0 5px;
+    color: teal;
+  }
+
+  /* Custom Accordion styling */
+.customAccordion {
+    width: 50%;
+    margin: auto;
+    
+  }
+  
+  .customAccordionItem {
+    border-radius: 8px;
+    color:  #e8308c;;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+
+  
+  .customAccordionButton {
+    align-content: center;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin: auto;
+   
+    background-color: #e8308c;
+    color: white;
+    border: 2px whitesmoke solid;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+      rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .customAccordionButton:hover {
+    transition: background-color 0.5s ease-in-out;
+    color: black;
+    background-color: #fad1e6; /* Darker shade of teal on hover */
+  }
+  
+  .customAccordionIcon {
+    margin-left: 10px;
+  }
+  
+  .customAccordionPanel {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity:0.6;
+    transition: opacity 0.8s ease-in-out ;
+  }
+  .customAccordionPanel:hover{
+    opacity: 1.3;
+  }
+ /* Heading Animation */
+.headingAnimation {
+    text-align: center;
+    /* display: block; */
+    overflow: hidden;
+    animation: dropAnimation 2.9s ease both infinite;
+    animation-delay: 2s; /* Add delay if needed */
+  }
+  
+  @keyframes dropAnimation {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .rotatequestionmark {
+    color: rgba(232,48,140);
+    display: inline-block;
+    animation: rotateAnimation 2s linear infinite; /* Add rotateAnimation */
+  }
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* Rotate 360 degrees for a full rotation */
+    }
+  }
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .imageTextContainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .text {
+      margin-left: 0;
+      margin-top: 20px;
+      max-width: 100%;
+      text-align: justify;
+    }
+  
+    .image {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .customAccordionButton {
+        padding: 10px 15px;
+      }
+    
+      .customAccordionPanel {
+        padding: 10px;
+      }
+  .customAccordion{
+    width: 80%;
+  }
+    /* Adjust other responsive styles as needed */
+  }
+  

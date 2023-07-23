@@ -33,12 +33,15 @@ padding: 2px;
   color: rgb(176, 23, 140);
 }
 /* ImageOverBox CSS */
+
+
 .container {
   position: relative;
   width: 50px;
   height: 50px;
   margin: 10px;
  left: 23%;
+
   
 }
 
@@ -49,6 +52,7 @@ padding: 2px;
  border: 4px rgb(201, 193, 193) solid;
  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   overflow:visible ; /* Image can overflow outside the box */
+  
 }
 
 .image {
@@ -61,7 +65,10 @@ padding: 2px;
   object-fit: cover;
   z-index: 1;
   border-radius: 50%;
-  border: 4px rgb(201, 193, 193) solid;
+  border: 2px rgb(201, 193, 193) solid;
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+    rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
 }
 /*  */
 .container1 {
@@ -81,6 +88,7 @@ padding: 2px;
  border: 4px rgb(201, 193, 193) solid;
  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
   overflow:visible ; /* Image can overflow outside the box */
+  
 }
 
 .image1 {
@@ -93,7 +101,10 @@ padding: 2px;
   object-fit: cover;
   z-index: 1;
   border-radius: 50%;
-  border: 4px rgb(201, 193, 193) solid;
+  border: 2px rgb(201, 193, 193) solid;
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+    rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
 }
 .Button{
   align-content: center;
@@ -135,11 +146,27 @@ padding: 2px;
   font-size: 16px;
   
 }
+/* .home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-iframe {
+  width: 320px;
+  height: 200px;
+} */
 
 @media (max-width:1100px) {
 .container{
   left: 15%;
 }
+/* .image{
+  left:auto;
+} */
 .container1{
   left: 70%;
 }
@@ -152,12 +179,14 @@ padding: 2px;
   .container1{
     left: 75%;
   }
+ 
   }
-  @media (max-width:400px) {
+  @media (max-width:500px) {
     .container{
-      left: 10%;
+      left: 5%;
     }
     .container1{
-      left: 45%;
+      left: 40%;
     }
+  
     }

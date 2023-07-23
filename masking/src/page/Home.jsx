@@ -3,6 +3,8 @@ import Imagedisplay from "../resuedCompo/imagedisplay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faHeart } from "@fortawesome/free-solid-svg-icons";
 import style from "./Home.module.css";
+import Maskneed from "../section/maskneed";
+import FAQSection from "../section/FAQSection";
 
 function Home() {
   return (
@@ -74,13 +76,13 @@ function Home() {
         </h3>
       </div>
 
-      <Flex justifyContent="space-around" flexWrap="wrap">
+      <Flex justifyContent="space-around" flexWrap="wrap" >
         <Imagedisplay
           image={
             "https://i.pinimg.com/564x/40/07/bd/4007bd13b3a357102415f06f6d91458f.jpg"
           }
         />
-        <Flex direction="column">
+        <Flex direction="column" className={style.drop}>
           
           <div className={style.scrollableinputcontainer}>
             <textarea
@@ -97,6 +99,16 @@ function Home() {
           }
         />
       </Flex>
+      <Maskneed/>
+      <br />
+      <br />
+      <FAQSection/>
+      {/* <div className="home-container">
+      <iframe
+        src="https://www.youtube.com/embed/DeQkMK5LME4"
+        className="home-iframe"
+      ></iframe>
+    </div> */}
     </div>
   );
 }

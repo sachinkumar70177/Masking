@@ -1,0 +1,109 @@
+/* MaskneedCard.module.css */
+
+/* Animation for the icon container */
+
+  
+  /* Style for the maskneed-card container */
+  .maskneedcard {
+   width: 90%;
+   height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f5f4f4;
+    padding: 10px;
+    transform: scale(0.9);
+   
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+   
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+  }
+  .maskneedcard:hover {
+    border-radius: 24px;
+    transform: scale(1.04);
+    transition: transform 0.8s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  
+  /* Style for the icon container */
+  .iconContainer {
+    
+    color: rgb(176, 23, 140);
+    width: 20px;
+    box-shadow: #fa4cf4 0px 5px 15px;
+    border-radius: 50%;
+    padding: 3px;
+    background-image: linear-gradient(45deg, #ffcef8 0%, #ffd1fd 100%);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    animation:  4s linear 0s infinite alternate scaleUp ;
+    
+  }
+
+  @keyframes scaleUp {
+    from {
+      transform: translateX(10px);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }
+  
+  /* Style for the icon */
+ 
+  
+  /* Style for the title */
+  .maskneedtitle  {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Style for the description */
+  .maskneeddesc  {
+    font-size: 16px;
+  }
+  .maskneedbutton{
+    align-content: center;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: auto;
+  width: max-content;
+  height: 30px;
+  background-color: #e8308c;
+  color: white;
+  border: 2px whitesmoke solid;
+  cursor: pointer;
+  /* font-weight: bold; */
+  box-shadow: rgba(232, 48, 140, .25) 0px 54px 55px,
+    rgba(232, 48, 140, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(232, 48, 140, 0.17) 0px 12px 13px, rgba(232, 48, 140, 0.09) 0px -3px 5px;
+  transition: background-color 0.2s ease-in-out;
+  }
+  .maskneedbutton:hover{
+    transition: background-color 0.5s ease-in-out;
+    color: black;
+    background-color: #fad1e6; /* Darker shade of teal on hover */
+  }
+  
+  /* Media query for responsive layout */
+  @media screen and (max-width: 768px) {
+    .maskneedcard {
+      width: 80%;
+      height: 280px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .maskneedcard {
+      width: 60%;
+    }
+  }
+  

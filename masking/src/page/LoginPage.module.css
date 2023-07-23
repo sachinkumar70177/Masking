@@ -1,0 +1,74 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+  }
+  
+  .imageColumn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .formControl {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1rem;
+  }
+  
+  .formControl label {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .formControl input {
+    height: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .formControl input:focus {
+    outline: none;
+    border-color: #3182ce;
+  }
+  
+  .button {
+    background-color: #3182ce;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #2563b3;
+  }
+  
+  .textCenter {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Add more custom CSS styles here if needed */
+  
