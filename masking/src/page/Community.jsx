@@ -63,7 +63,7 @@ function Community() {
       <div className={style.container}>
       <animated.div style={springProps}>
           <Grid
-            templateColumns="repeat(auto-fit, minmax(300px, 1fr))"
+            templateColumns="repeat(auto-fit, minmax(300px, 3fr))"
             width="85%"  margin="auto"
             gap={2}
             className={style.grid}
