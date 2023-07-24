@@ -1,0 +1,22 @@
+/* Styles for ContactPage */
+.container {
+    padding: 1rem;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #3366ff; /* Heading color: Blue */
+  }
+  
+  .subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .listItem {
+    margin-bottom: 0.5rem;
+  }
+  

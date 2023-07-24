@@ -1,0 +1,72 @@
+/* Styles for AboutPage */
+.container {
+    padding: 1rem;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #3366ff; /* Heading color: Blue */
+    animation: fadeInUp 1s ease-in-out; /* Animation for headings */
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .imageWrapper {
+    margin: 0 auto;
+width: fit-content;
+    animation: fadeInUp 1s ease-in-out; /* Animation for the image */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+  }
+  .imageWrapper img{
+    border-radius: 20px; 
+  }
+  
+  .listItem {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width:768px) {
+  .container{
+width: 80%;
+  }
+  .imageWrapper{
+    width: fit-content;
+  }
+  .imageWrapper img{
+    width: fit-content;
+    height: 150px;
+  }
+ 
+  }
+  @media (max-width:400) {
+    .container{
+  width: 100%;
+    }
+    .imageWrapper{
+      width: fit-content;
+    }
+    .imageWrapper img{
+      width: fit-content;
+      height: 100px;
+    }
+   
+    }
