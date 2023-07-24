@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { Link as ChakraLink } from "@chakra-ui/react";
 import Myimage from "./Image/MaSk.jpg";
 import styles from "./Navbar.module.css"; // Import the CSS module
+import {Authcontext} from "../Auth/Authcontext"
+import { useContext } from "react";
 
 import { useState } from 'react';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const { isAuth ,setisauth,mail,handlelogout} = useContext(Authcontext);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -39,7 +41,7 @@ function Navbar() {
           Our Story
         </Link>
         <Link as={ChakraLink} to="/community" className={styles["navbar-link"]}> {/* Use the CSS module class */}
-          Community
+          Blog
         </Link>
         <Link as={ChakraLink} to="/ourmission" className={styles["navbar-link"]}> {/* Use the CSS module class */}
           Our Mission
@@ -51,13 +53,13 @@ function Navbar() {
 
       {/* Render login button within the links div */}
       {
-        true ? (
+        !isAuth ? (
           <Link as={ChakraLink} to="/login">
-            <Button colorScheme='teal' className={styles["navbar-button"]}>Log In</Button> 
+            <button  className={styles["navbar-button"]}>Log In</button> 
           </Link>
         ) : (
           <Link as={ChakraLink} to="/">
-            <Button className={styles["navbar-button"]}>hey</Button> 
+            <Button className={styles["navbar-button"]} >logout</Button> 
           </Link>
         )
       }

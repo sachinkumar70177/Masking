@@ -64,11 +64,11 @@ const getItemsPerPage = () => {
         <span className={style.globe}>mask?</span>
       </h1>
       {/*  http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT} */}
-      <Grid templateColumns="repeat(auto-fit, minmax(300px, 1fr))"  width ="85%"  gap={2} className={style.grid}>
+      <Grid  w="100%"  gap={2} className={style.grid}>
         {maskneed.map((el, index) => (
-          <GridItem key={index}>
-            <MaskneedCard {...el} />
-          </GridItem>
+        
+            <MaskneedCard {...el} key={index}/>
+       
         ))}
       </Grid>
       <MaskneedPagination

@@ -76,14 +76,13 @@ function Home() {
         </h3>
       </div>
 
-      <Flex justifyContent="space-around" flexWrap="wrap" >
+      <Flex justifyContent="space-around" flexWrap="wrap">
         <Imagedisplay
           image={
             "https://i.pinimg.com/564x/40/07/bd/4007bd13b3a357102415f06f6d91458f.jpg"
           }
         />
         <Flex direction="column" className={style.drop}>
-          
           <div className={style.scrollableinputcontainer}>
             <textarea
               className={style.scrollableinput}
@@ -99,10 +98,10 @@ function Home() {
           }
         />
       </Flex>
-      <Maskneed/>
+      <Maskneed />
       <br />
       <br />
-      <FAQSection/>
+      <FAQSection />
       {/* <div className="home-container">
       <iframe
         src="https://www.youtube.com/embed/DeQkMK5LME4"

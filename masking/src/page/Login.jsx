@@ -7,92 +7,127 @@ import {
   Input,
   Button,
   useToast,
-  Text
+  Text,
+  Grid,
 } from "@chakra-ui/react";
-import image from "../Routes/Image/MaSk.jpg"
+import {Authcontext} from "../Auth/Authcontext"
+import { useContext } from "react";
+import image from "../Routes/Image/MaSk.jpg";
+import style from "./LoginPage.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faGooglePlusSquare,
+  faTwitterSquare,
+} from "@fortawesome/free-brands-svg-icons";
+import { LockIcon, UserIcon } from "@chakra-ui/react";
+import axios from "axios";
+import {useNavigate} from "react-router-dom"
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { isAuth ,setisauth,mail} = useContext(Authcontext);
   const toast = useToast();
-
+const nav=useNavigate()
   const handleLogin = () => {
-    // Perform your login logic here.
-    // For demonstration purposes, let's assume the login is successful
-    // if the email and password are both non-empty.
-    if (email.trim() === "" || password.trim() === "") {
-      // Login failed
-      toast({
-        title: "Login Failed",
-        description: "Please enter a valid email and password.",
-        status: "error",
-        duration: 3000,
-        isClosable: true,
+    const obj = { email, password };
+    console.log(obj)
+    axios
+      .post(`https://reqres.in/api/users`,
+        obj
+      )
+      .then((response) => {
+      
+        if (response.status === 201) {
+        
+          setisauth(true)
+         nav(`/`)
+          toast({
+            title: "Login Successful",
+            description: `Welcome back, ${email}!`,
+            status: "success",
+            duration: 3000,
+            isClosable: true,
+          });
+          // Perform any other actions after successful login
+        } else {
+          // Login failed
+          toast({
+            title: "Login Failed",
+            description: "Invalid email or password.",
+            status: "error",
+            duration: 3000,
+            isClosable: true,
+          });
+        }
+      })
+      .catch((err) => {
+      
+        
+        //   setisauth(true)
+        //  nav(`/`)
       });
-    } else {
-      // Login succeeded
-      toast({
-        title: "Login Successful",
-        description: `Welcome back, ${email}!`,
-        status: "success",
-        duration: 3000,
-        isClosable: true,
-      });
-      // Perform any other actions after successful login
-    }
+
+    // Perform any other actions after successful login
   };
 
   return (
-    <Flex
-      height="100vh"
-      alignItems="center"
-      justifyContent="center"
-    //   bgGradient="linear(to bottom right, #38B2AC, #3182ce)"
-    >
+    <Grid className={style.grid}>
       {/* Content */}
-      <VStack
-        spacing={4}
-        p={8}
-        borderWidth={1}
-        borderRadius="md"
-      
-        bg="rgba(255, 255, 255, 0.8)" // Transparent white background
-        w="40%"
-      >
-        <img
-          src={image}
-          alt="Masking Logo"
-      
-          mb={6}
-        />
-         </VStack>
-         <VStack>
-        <FormControl id="email">
-          <FormLabel>Email</FormLabel>
-          <Input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </FormControl>
-        <FormControl id="password">
-          <FormLabel>Password</FormLabel>
-          <Input
-            type="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </FormControl>
-        <Button colorScheme="blue" size="lg" onClick={handleLogin}>
-          Login
-        </Button>
-        <Text textAlign="center" mt={4}>
-          <a href="#">Forgot Password?</a>
-        </Text>
-      </VStack>
-    </Flex>
+
+      <div>
+        <div className={style.icon}>
+          <span>
+            <FontAwesomeIcon icon={faFacebookSquare} />
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faTwitterSquare} />
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faGooglePlusSquare} />
+          </span>
+        </div>
+        <div className={style.div}></div>
+        <VStack className={style.VStack}>
+          <h2 className={style.h2}>Log In</h2>
+          <FormControl id="email" className={style.FormControl}>
+            <FormLabel>Email</FormLabel>
+
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </FormControl>
+          <FormControl id="password" className={style.FormControl}>
+            <FormLabel>Password</FormLabel>
+
+            <Input
+              type="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </FormControl>
+          <Button
+            colorScheme="blue"
+            type="submit"
+            size="lg"
+            className={style.Button}
+            onClick={handleLogin}
+          >
+            Login
+          </Button>
+          <Text textAlign="center">
+            <a className={style.textCenter} href="#">
+              Forgot Password?
+            </a>
+          </Text>
+        </VStack>
+      </div>
+    </Grid>
   );
 };
 
